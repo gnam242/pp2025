@@ -38,7 +38,7 @@ def input_marks():
         marks[course_id].append((s["id"], mark))
 
 def list_students():
-    print("\n=== Students List ===")
+    print("\nStudents List ")
     for s in students:
         print(f"{s['id']} - {s['name']} - {s['dob']}")
 
@@ -59,7 +59,7 @@ def show_marks():
                 print(f"{s['name']}: {mark}")
                 break
 
-print("=== Student Mark Management ===")
+print("Student Mark Management")
 
 num_students = input_number_students()
 input_student_info(num_students)
@@ -68,7 +68,7 @@ num_courses = input_number_courses()
 input_course_info(num_courses)
 
 while True:
-    print("\n--- MENU ---")
+    print("\n menu")
     print("1. Input marks for a course")
     print("2. List students")
     print("3. List courses")
